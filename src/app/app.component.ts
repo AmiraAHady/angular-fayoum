@@ -3,11 +3,13 @@ import { RouterOutlet } from '@angular/router';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { CardsComponent } from './components/cards/cards.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { MovieListComponent } from './components/movie-list/movie-list.component';
+import { MovieDetilsComponent } from './components/movie-detils/movie-detils.component';
 // decorator
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [NavbarComponent,CardsComponent,FooterComponent],
+  imports: [NavbarComponent,CardsComponent,FooterComponent,MovieListComponent,MovieDetilsComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
