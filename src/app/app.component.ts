@@ -9,7 +9,7 @@ import { MovieDetilsComponent } from './components/movie-detils/movie-detils.com
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [NavbarComponent,CardsComponent,FooterComponent,MovieListComponent,MovieDetilsComponent],
+  imports: [RouterOutlet,NavbarComponent,FooterComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
