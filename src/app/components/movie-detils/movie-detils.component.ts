@@ -19,6 +19,8 @@ export class MovieDetilsComponent implements OnInit {
   }
   ngOnInit(): void {
     this.id=Number(this.route.snapshot.paramMap.get('id'))
-    this.movieData = this.movieServ.getMovieById(this.id)!;
+     this.movieServ.getMovieById(this.id).subscribe((data)=>{
+      this.movieData=data;
+     })
   }
 }

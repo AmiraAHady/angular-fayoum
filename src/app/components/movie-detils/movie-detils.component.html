@@ -20,10 +20,10 @@
         </p>
         <!-- <p class="card-text" [ngClass]="'cls'">
           {{ movieData.overview }}
-        </p> -->
-        <!-- @for (genre of movieData.genres; track $index) {
+        </p>  -->
+        @for (genre of movieData.genres; track $index) {
         <span class="badge rounded-pill text-light mx-1" [ngClass]="genre.name">{{genre.name}}</span>
-        } -->
+        }
       </div>
     </div>
   </div>
